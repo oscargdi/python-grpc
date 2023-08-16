@@ -1,6 +1,6 @@
+from app.service import Service
 from com.grpc.messages import hello_pb2
 from com.grpc.services import hello_pb2_grpc
-from app.service import Service
 
 
 class Greeter(hello_pb2_grpc.GreeterServicer):

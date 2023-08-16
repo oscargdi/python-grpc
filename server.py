@@ -3,9 +3,9 @@ from concurrent import futures
 
 import grpc
 
-from com.grpc.services import hello_pb2_grpc
 from app.service import GreeterService
 from app.servicer import Greeter
+from com.grpc.services import hello_pb2_grpc
 
 logger = logging.getLogger(__name__)
 

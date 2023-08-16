@@ -548,6 +548,12 @@ redefining-builtins-modules = ["six.moves", "past.builtins", "future.builtins", 
 
 [tool.black]
 target-versions = ["py311"]
+extend-exclude = '''
+(
+  ^/com/    # exclude grpc generated files
+)
+'''
 
 [tool.isort]
 profile = "black"
+skip_glob = ["com/*"]
