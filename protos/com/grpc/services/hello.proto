@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package com.services;
 
-import "com/messages/hello.proto";
+import "com/grpc/messages/hello.proto";
 
 // The greeting service definition.
 service Greeter {
