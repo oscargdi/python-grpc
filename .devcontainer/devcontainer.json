@@ -7,7 +7,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"zxh404.vscode-proto3"
 			],
 			"settings": {
 				"files.trimFinalNewlines": true,
