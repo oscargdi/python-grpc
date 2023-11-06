@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 grpcio-tools = "*"
+loguru = "*"
+highlight-io = "*"
 
 [dev-packages]
 black = "*"

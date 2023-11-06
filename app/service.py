@@ -1,7 +1,7 @@
 import abc
 import logging
 
-logger = logging.getLogger(__name__)
+from loguru import logger
 
 
 class Service(abc.ABC):
@@ -15,5 +15,8 @@ class Service(abc.ABC):
 class GreeterService(Service):
     """Greeter service implementation."""
 
+    @logger.catch(reraise=True)
     def get_greeting(self, name: str):
+        logger.info("Calling implementation")
+        raise Exception("This error is not being reported :(")
         return f"Hello {name}"
