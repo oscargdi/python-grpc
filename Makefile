@@ -15,6 +15,6 @@ protos:
 server:
 	pipenv run python server.py
 
-.PHONY: client
-client:
-	pipenv run python client.py
+.PHONY: request
+request:
+	pipenv run python request.py
